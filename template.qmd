@@ -2,8 +2,6 @@
 title: Untitled
 format:
   govuk-html: default
-author: Olivia Box Power
-date: last-modified
 ---
 
 ## Introduction
