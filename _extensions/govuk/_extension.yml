@@ -19,3 +19,4 @@ contributes:
       class.source: "govuk-body"
     pptx:
       reference-doc: DHSC-PPT-template.pptx
+      date-format: "[Published ]DD/MM/YYYY"

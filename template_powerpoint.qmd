@@ -1,6 +1,8 @@
 ---
 title: "Powerpoint template"
-author: author name
+subtitle: "Presentation subtitle"
+author: "Author name"
+date: today
 format:
   govuk-pptx
 ---
