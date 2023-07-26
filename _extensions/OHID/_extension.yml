@@ -1,0 +1,16 @@
+title: OHID
+author: Olivia Box Power
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    html:
+      embed-resources: true
+      standalone: true
+      toc: true
+      toc-title: Contents
+      toc_float: true
+      toc_depth: 3
+      toc-location: left
+      css: "stylesheets/ohid_style.CSS"
+
