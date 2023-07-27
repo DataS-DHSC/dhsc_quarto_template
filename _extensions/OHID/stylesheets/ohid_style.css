@@ -60,6 +60,10 @@ a {
   color: #00947E
 }
 
+.OHID_logo {
+  padding:30px 0 30px 0;
+  height:190px
+}
 
 #toc-title {
   display: none;
@@ -76,13 +80,7 @@ a {
     color: white !important;
     border: none !important;
 }
-/**
-.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-    color: white !important;
-    background-color: #337ab7 !important;
-}
 
-**/
 @media print {
   .tab-content > .tab-pane {
     display: block;

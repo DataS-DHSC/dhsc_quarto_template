@@ -12,5 +12,7 @@ contributes:
       toc_float: true
       toc_depth: 3
       toc-location: left
-      css: "stylesheets/ohid_style.CSS"
+      include-before-body: "stylesheets/OHID_logo.html"
+      css: "stylesheets/OHID_style.CSS"
+      page-layout: full
 
