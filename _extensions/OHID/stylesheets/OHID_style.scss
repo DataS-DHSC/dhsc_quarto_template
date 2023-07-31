@@ -1,3 +1,11 @@
+/*-- scss:defaults --*/
+$link-color: #00947E;
+$toc-active-border: none;
+$toc-inactive-border: none;
+$toc-font-size: 17px;
+
+/*-- scss:rules --*/
+
 body {
     font-size: 17px;
     line-height: 1.5em;
@@ -56,10 +64,6 @@ h5 {
     border-bottom: none;
 }
 
-a {
-  color: #00947E
-}
-
 .OHID_logo {
   padding:30px 0 30px 0;
   height:190px
@@ -70,23 +74,44 @@ a {
 }
 
 #TOC {
-  color: white !important;
-  background-color: #00A88F !important;
-  border-radius: 10px !important;
+  border-radius: 10px;
+  color: #00947E !important;
+}
+
+#TOC a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  text-underline-offset: .1578em;
+  text-decoration-skip-ink: none;
+  color: #006652 !important;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1578em;
+  text-decoration-skip-ink: none;
 }
 
 
-.sidebar nav[role=doc-toc] ul>li>a, .sidebar nav[role=doc-toc] ul>li>ul>li>a {
-    color: white !important;
-    border: none !important;
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  text-underline-offset: .1578em;
+  text-decoration-skip-ink: none;
+  color: #006652 !important;
 }
+
+a:visited {
+  color: #4c2c92;
+}
+
 
 @media print {
   .tab-content > .tab-pane {
     display: block;
   }
 }
-
 
 @media print {
   .TOC {
