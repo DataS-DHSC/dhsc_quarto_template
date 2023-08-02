@@ -7,14 +7,34 @@ format:
 # 1 Heading
 
 ## 1.1 Subheading 1 
+
+::: {.panel-tabset}
+
+### Tab 1 
+This is tab 1
+```{r}
+plot(mtcars$carb)
+```
+
+### Tab 2
+This is tab 2
+
+:::
+
  
 ## 1.2 Subheading 2
 
 # 2 Heading 2
 
+Some text here
+
 ## 2.1 Subheading 1
 
+More here
+
 ## 2.2 Subheading 2
+
+more here
 
 ## 2.3 Subheading 3
 

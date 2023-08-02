@@ -8,7 +8,6 @@ contributes:
       embed-resources: true
       standalone: true
       toc: true
-      toc-title: Contents
       toc_float: true
       toc_depth: 3
       toc-location: left

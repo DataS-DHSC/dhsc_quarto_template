@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 $link-color: #00947E;
-$toc-active-border: none;
-$toc-inactive-border: none;
+$toc-active-border: #006652;
+$toc-inactive-border: #006652;
 $toc-font-size: 17px;
 
 /*-- scss:rules --*/
@@ -74,7 +74,6 @@ h5 {
 }
 
 #TOC {
-  border-radius: 10px;
   color: #00947E !important;
 }
 
@@ -106,15 +105,46 @@ a:visited {
   color: #4c2c92;
 }
 
+.panel-tabset > .nav-tabs > a {
+  color: #006652 !important;
+}
 
-@media print {
-  .tab-content > .tab-pane {
-    display: block;
-  }
+a.nav-link {
+  color: rgb(73, 80, 87) !important;
+}
+
+a.nav-link:visited {
+  color: rgb(73, 80, 87) !important;
+}
+
+a.nav-link:hover {
+  color: rgb(73, 80, 87) !important;
+  text-decoration: underline;
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  text-underline-offset: .1578em;
+  text-decoration-skip-ink: none;
 }
 
 @media print {
-  .TOC {
-    display:none;
-  }
+.panel-tabset > .tab-content > .tab-pane {
+  display: block !important;
+}
+
+.panel-tabset > .tab-content {
+  border: none;
+  padding: 0;
+}
+
+.panel-tabset > .nav-tabs {
+  display: none;
+}
+
+.tabset-margin-container {
+  display: none;
+}
+
+.tab-pane > p {
+  padding-top: 0 !important;
+}
+
 }
