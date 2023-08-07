@@ -52,7 +52,7 @@ $endif$
 }
 .dropdown .dropbtn {
   cursor: pointer;
-  font-size: 20px;  
+  font-size: 20px;
   border: none;
   outline: none;
   color: white;
@@ -140,7 +140,7 @@ input[type=submit]:hover{
         </span>
       </a>
     </div>
-    
+
     <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Regions &#9660;</button>
   <div id="myDropdown" class="dropdown-content">
