@@ -1,5 +1,5 @@
 
-html_sideba2 <- function(selected, names, folder, subnames = NULL) {
+html_sidebar <- function(selected, names, folder, subnames = NULL) {
   html <- '<html><link rel="stylesheet" href="./www/GDS.css"><br><br><ul class="app-subnav__section">'
 
   for (name in names) {
