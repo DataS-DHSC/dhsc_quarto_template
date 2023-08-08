@@ -50,7 +50,9 @@ This template is an example of how individual HTML pages can be used as part of 
 ```{r drop down}
 #| results: "asis"
   
-drop_down('Further information', 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
+drop_down(title = 'Further information', 
+          description = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone
+          particularly interested.')
 
 ```
 
