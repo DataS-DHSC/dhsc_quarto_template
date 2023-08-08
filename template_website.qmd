@@ -31,7 +31,10 @@ source('www/html_functions.R')
 ```{r sidebar}
 #| results: "asis"
   
-html_sidebar('Page 1', c('Page 1','Page 2','Page 3'), 'folder', c('Section 1','Section 2','Section 3'))
+html_sidebar(selected = 'Page 1', 
+             names = c('Page 1','Page 2','Page 3'), 
+             folder = 'folder',
+             subnames = c('Section 1','Section 2','Section 3'))
 
 ```
 
