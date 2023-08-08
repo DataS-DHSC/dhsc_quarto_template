@@ -1,29 +1,5 @@
 
-html_sidebar <- function(selected, names, area) {
-  html <- '<html><link rel="stylesheet" href="./www/GDS.css"><br><br><ul class="app-subnav__section">'
-
-  for (name in names) {
-
-    name1 <- gsub("_", " ", name)
-
-    if (selected == name) {
-      class <- "app-subnav__section-item app-subnav__section-item--current"
-    } else {
-      class <- "app-subnav__section-item"
-    }
-
-    link <- paste0('<li class="', class, '"><a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="', Sys.getenv('BASE_URL'), area, '/', name, '.html">', name1, '</a></li>')
-
-    html <- paste0(html, link)
-  }
-
-  html <- paste0(html, "</ul></html>")
-
-  cat(html)
-}
-
-
-html_sidebar2 <- function(selected, names, folder, subnames = NULL) {
+html_sideba2 <- function(selected, names, folder, subnames = NULL) {
   html <- '<html><link rel="stylesheet" href="./www/GDS.css"><br><br><ul class="app-subnav__section">'
 
   for (name in names) {

@@ -154,15 +154,6 @@ input[type=submit]:hover{
     <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/West_Midlands/summary.html">West Midlands</a>
     <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/Yorkshire_and_the_Humber/summary.html">Yorkshire and the Humber</a>
   </div>
-    <!--
-    <div class="app-site-search" data-module="app-search" data-search-index="/search-index-99c800b027182f5750b9fbca6922df48.json">
-      <label class="govuk-visually-hidden" for="app-site-search__input">Health in England</label>
-      <a class="app-site-search__link govuk-link" href="/sitemap/">Sitemap</a>
-    </div>
-    <button hidden class="govuk-header__menu-button app-navigation__menu-button js-app-navigation__toggler" aria-controls="app-navigation">
-      Menu
-    </button>
-    -->
   </div>
 </header>
 <div class="govuk-phase-banner app-width-container">
