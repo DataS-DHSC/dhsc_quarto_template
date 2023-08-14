@@ -2,19 +2,7 @@
 title: 'Standard Template'
 
 format:
-  html:
-    toc: true
-    toc-location: left
-    toc-title: Sections
-    toc-depth: 3
-    embed-resources: true
-    css: www/styles.css
-    lang: en
-    page-layout: full
-    grid:
-      gutter-width: 5em
-    
-template: www/govuk.template
+  govuk-html
 
 execute:
   echo: false
@@ -29,7 +17,7 @@ This template is an example of how individual HTML pages can be used as part of 
 ```{r drop down}
 #| results: "asis"
 
-source('www/html_functions.R')
+source('_extensions/govuk/html_functions.R')
   
 drop_down('Further information', 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
 
