@@ -1,0 +1,19 @@
+title: Govuk
+author: Olivia Box Power
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    html:
+      template: gov_uk_base.html
+      theme: none
+      embed-resources: true
+      standalone: true
+      code-line-numbers: false
+      code-copy: false
+      code-annotations: false
+      highlight-style: none
+    knitr:
+      opts_chunk: 
+      class.output: "govuk-body"
+      class.source: "govuk-body"
