@@ -1,9 +1,20 @@
-title: Govuk
+title: DHSC
 author: Olivia Box Power
 version: 1.0.0
 quarto-required: ">=1.2.0"
 contributes:
   formats:
+    html:
+      embed-resources: true
+      standalone: true
+      toc: true
+      toc_float: true
+      toc_depth: 3
+      toc-location: left
+      include-before-body: "stylesheets/DHSC_logo.html"
+      theme:
+        - default
+        - stylesheets/DHSC_style.scss
     pptx:
       reference-doc: DHSC-PPT-template.pptx
       date-format: "[Published ]DD/MM/YYYY"

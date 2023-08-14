@@ -1,7 +1,7 @@
 ---
 title: Untitled
 format:
-  OHID-html: default
+  DHSC-html: default
 ---
 
 # 1 Heading
