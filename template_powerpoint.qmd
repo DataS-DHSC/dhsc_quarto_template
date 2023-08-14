@@ -4,7 +4,7 @@ subtitle: "Presentation subtitle"
 author: "Author name"
 date: today
 format:
-  govuk-pptx
+  DHSC-pptx
 ---
 
 # Section header slide
