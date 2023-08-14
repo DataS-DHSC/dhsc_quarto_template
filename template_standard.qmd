@@ -2,7 +2,7 @@
 title: 'Standard Template'
 
 format:
-  govuk-html
+  govuk-standard-html
 
 execute:
   echo: false
@@ -17,7 +17,7 @@ This template is an example of how individual HTML pages can be used as part of 
 ```{r drop down}
 #| results: "asis"
 
-source('_extensions/govuk/html_functions.R')
+source('_extensions/govuk-standard/html_functions.R')
   
 drop_down('Further information', 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
 
