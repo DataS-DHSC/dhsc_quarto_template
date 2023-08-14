@@ -4,6 +4,7 @@ title: 'Website Template'
 format:
   govuk-website-html
   
+
 execute:
   echo: false
   warnings: false
@@ -41,7 +42,8 @@ This template is an example of how individual HTML pages can be created and buil
 
 ```{r drop down}
 #| results: "asis"
-  
+source('_extensions/govuk-standard/html_functions.R')
+
 drop_down(title = 'Further information', 
           description = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone
           particularly interested.')

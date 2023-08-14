@@ -1,16 +1,18 @@
-title: govuk-website
+title: govuk-standard
 author: Annabel Westermann
 version: 1.0.0
 quarto-required: ">=1.2.0"
 contributes:
   formats:
     html:
-      template: govuk_website.template
+      template: govuk.template
+      toc: true
+      toc-location: left
+      toc-title: Sections
+      toc-depth: 3
       embed-resources: true
       css: styles.css
       lang: en
       page-layout: full
       grid:
-        body-width: 760px
-
-
+        gutter-width: 5em

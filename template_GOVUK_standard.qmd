@@ -1,0 +1,82 @@
+---
+title: 'Standard Template'
+
+format:
+  govuk-standard-html
+  
+
+execute:
+  echo: false
+  warnings: false
+  message: false
+  
+---
+
+
+# Standard Template
+
+This template is an example of how to write a report in the **GOV.UK** style.
+
+
+```{r drop down}
+#| results: "asis"
+source('_extensions/govuk-standard/html_functions.R')
+
+drop_down(title = 'Further information', 
+          description = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
+
+```
+
+## More Information 
+
+You can learn more about controlling the appearance of HTML output here: <https://quarto.org/docs/output-formats/html-basics.html>
+
+
+::: {.panel-tabset}
+
+## Tab 1
+
+```{r Chart}
+#| warnings: false
+#| message: false
+
+library(plotly)
+
+fig <- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length)
+
+fig
+
+```
+
+
+## Tab 2
+
+```{r Data table}
+
+library(htmlTable)
+
+htmlTable(head(iris, 10), rnames=FALSE)
+
+```
+
+:::
+
+```{r Download button}
+
+library(downloadthis)
+
+iris %>%
+  download_this(
+    output_name = 'My data',
+    output_extension = ".csv",
+    button_label = "Download data",
+    button_type = "default",
+    has_icon = FALSE,
+    icon = "arrow-down-to-line",
+    self_contained = TRUE,
+    class = "govuk-button govuk-button--secondary",
+    csv2 = FALSE
+  )
+
+```
+
