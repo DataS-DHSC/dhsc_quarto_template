@@ -2,7 +2,7 @@
 title: 'Website Template'
 
 format:
-  govuk-html
+  CopyOfgovuk-html
   
 execute:
   echo: false

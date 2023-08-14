@@ -12,8 +12,5 @@ contributes:
       page-layout: full
       grid:
         body-width: 760px
-  execute:
-    echo: false
-    warnings: false
-    message: false
+
 
