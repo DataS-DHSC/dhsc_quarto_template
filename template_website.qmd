@@ -2,16 +2,8 @@
 title: 'Website Template'
 
 format:
-  html:
-    page-layout: full
-    embed-resources: true
-    css: www/styles.css
-    lang: en
-    grid:
-      body-width: 760px
-    
-template: www/govuk_website.template
-
+  govuk-html
+  
 execute:
   echo: false
   warnings: false
@@ -22,7 +14,7 @@ execute:
 ```{r}
 #| output: false
 
-source('www/html_functions.R')
+source('_extensions/govuk/html_functions.R')
 ```
 
 ::: {.grid}
