@@ -15,8 +15,6 @@ format:
 
 -   Update the details at the top of the page for your presentation.
 
--   Templates for DHSC and OHID branding are available. The default is DHSC, to switch to OHID replace DHSC-pptx with OHID-pptx under 'format'.
-
 -   Create your powerpoint by choosing the types of slides you require and replacing the placeholder text with your contents.
 
 -   To render the powerpoint, save this file and press render. The powerpoint file will export into your Downloads folder.
