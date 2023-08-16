@@ -2,15 +2,17 @@
 
 ## Installing
 
+To install the DHSC quarto templates, create a new project folder (e.g. an R studio project) and enter the following in the terminal
+
 ``` bash
 quarto use template DataS-DHSC/dhsc_quarto_template
 ```
 
-This will install the extension and create example qmd files that you can use as a starting place for your document.
+This will install the extensions and create example qmd files that you can use as a starting place for your document.
 
 ## Using
 
-This project includes the following templates which you can use as the starting point of your project.
+This project includes the following quarto templates. Edit the relevant template and render.
 
 `template_DHSC_HTML.qmd` A standalone HTML report document with DHSC branding.
 
@@ -24,4 +26,4 @@ This project includes the following templates which you can use as the starting 
 
 `template_GOVUK_website.qmd` A HTML website with GovUK branding.
 
-## Updating to the latest version
+## 
