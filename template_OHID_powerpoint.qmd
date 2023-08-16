@@ -82,4 +82,4 @@ Text
 
 -   More options can be found on the [Quarto website](https://quarto.org/docs/authoring/figures.html)
 
-![Logo](_extensions/govuk-standard/assets/images/govuk-opengraph-image.png)
+![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png)
