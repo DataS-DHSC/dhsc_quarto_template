@@ -6,23 +6,29 @@ format:
 
 # 1 Heading
 
-## 1.1 Subheading 1 
+## 1.1 Subheading 1
 
-::: {.panel-tabset}
+::: panel-tabset
+### Tab 1
 
-### Tab 1 
 This is tab 1
+
+Add a chart
+
 ```{r}
+# Code to generate chart
 plot(mtcars$carb)
 ```
 
 ### Tab 2
-This is tab 2
 
+This is tab 2
 :::
 
- 
 ## 1.2 Subheading 2
+
+New subheading.
+
 
 # 2 Heading 2
 
@@ -30,16 +36,29 @@ Some text here
 
 ## 2.1 Subheading 1
 
-More here
+More here but this time in **BOLD**
 
 ## 2.2 Subheading 2
 
-more here
+And more here
+
+Example table
+
+| name | amount |
+|------|-------:|
+| a    |    2.1 |
+| b    |    3.2 |
+| c    |    7.8 |
 
 ## 2.3 Subheading 3
 
 This is a [link](https://www.gov.uk/)
 
 ```{r}
+# This is a code chunk
 1 + 1
 ```
+
+Add an image
+
+![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png)
