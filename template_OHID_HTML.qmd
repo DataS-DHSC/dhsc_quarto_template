@@ -1,7 +1,7 @@
 ---
 title: Untitled
 format:
-  DHSC-html: default
+  OHID-html: default
 ---
 
 # 1 Heading
@@ -61,4 +61,4 @@ This is a [link](https://www.gov.uk/)
 
 Add an image
 
-![Logo](_extensions/DHSC/assets/DHSC_3268_AW.png)
+![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png)

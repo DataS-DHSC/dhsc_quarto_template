@@ -1,0 +1,85 @@
+---
+title: "Powerpoint template"
+subtitle: "Presentation subtitle"
+author: "Author name"
+date: today
+format:
+  OHID-pptx
+---
+
+# Section header slide
+
+## Title and Content slide
+
+**To do:**
+
+-   Update the details at the top of the page for your presentation.
+
+-   Create your powerpoint by choosing the types of slides you require and replacing the placeholder text with your contents.
+
+-   To render the powerpoint, save this file and press render. The powerpoint file will export into your Downloads folder.
+
+## Title and Content slide
+
+To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)):
+
+```{r}
+2+2
+
+```
+
+## 
+
+::: notes
+Speaker notes go here. This is a blank slide.
+:::
+
+## Two Content slide
+
+::: columns
+::: column
+contents column 1...
+:::
+
+::: column
+contents column 2...
+:::
+:::
+
+## Comparison slide
+
+::: columns
+::: column
+contents column 1...
+
+| name | amount |
+|------|-------:|
+| a    |    2.1 |
+| b    |    3.2 |
+| c    |    7.8 |
+:::
+
+::: column
+contents column 2...
+:::
+:::
+
+## Content with Caption
+
+Text
+
+| name | amount |
+|------|-------:|
+| a    |    2.1 |
+| b    |    3.2 |
+| c    |    7.8 |
+
+## Picture with Caption
+
+-   The caption for the image goes in the square brackets, this can be left blank if no caption is needed.
+
+-   The file path for the image goes in the round brackets.
+
+-   More options can be found on the [Quarto website](https://quarto.org/docs/authoring/figures.html)
+
+![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png)
