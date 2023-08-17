@@ -4,12 +4,10 @@ title: 'Website Template'
 format:
   govuk-website-html
   
-
 execute:
   echo: false
   warnings: false
   message: false
-  
 ---
 
 ```{r}

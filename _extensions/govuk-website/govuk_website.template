@@ -17,7 +17,7 @@ $if(description-meta)$
   <meta name="description" content="$description-meta$" />
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <link rel="icon" type="image/x-icon" href="./www/assets/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./_extensions/govuk-website/assets/images/favicon.ico">
   <style>
     $styles.html()$
   </style>
@@ -38,8 +38,7 @@ $endif$
   <![endif]-->
 </head>
 
-<<<<<<<< HEAD:_extensions/govuk-website/govuk_website.template
-<link rel="stylesheet" href="./www/GDS.css">
+<link rel="stylesheet" href="./_extensions/govuk-website/GDS.css">
 
  <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
@@ -111,10 +110,8 @@ input[type=submit]:hover{
 }
 
 </style>
-========
-<link rel="stylesheet" href="./_extensions/govuk-standard/GDS.css">
->>>>>>>> govuk_template_standard:_extensions/govuk-standard/govuk.template
 
+<link rel="stylesheet" href="./_extensions/govuk-website/GDS.css">
 
 <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container app-width-container app-header__container">

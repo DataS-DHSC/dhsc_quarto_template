@@ -3,13 +3,11 @@ title: 'Standard Template'
 
 format:
   govuk-standard-html
-  
 
 execute:
   echo: false
   warnings: false
   message: false
-  
 ---
 
 
