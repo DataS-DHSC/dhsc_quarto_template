@@ -40,7 +40,7 @@ $endif$
 
 <link rel="stylesheet" href="./_extensions/govuk-website/GDS.css">
 
- <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+ <a href="#quarto-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
 
 <style>

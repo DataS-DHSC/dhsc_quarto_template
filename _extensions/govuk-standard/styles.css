@@ -147,8 +147,12 @@ table {
   overflow-x: auto;
 }
 
-td { 
+td {
   width: 20%;
+}
+
+td, tr {
+  background-color: white !important;
 }
 
 img:hover {
@@ -182,31 +186,64 @@ font-size: 18px;
 }
 
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+
+#toc-title {
+  display: none;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
+#TOC {
+  color: #1d70b8 !important;
+  font-size:16px;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+#TOC a:link{
+  color: #1d70b8;
+}
+
+#TOC a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  text-underline-offset: .1578em;
+  text-decoration-skip-ink: none;
+  color: #003078 !important;
 }
 
 
+#TOC a:active{
+  color: #1d70b8 !important;
+}
+
+.nav-link {
+  color: #1d70b8
+}
+
+.table>:not(caption)>*>* {
+  box-shadow: None;
+}
+
+@media print {
+.panel-tabset > .tab-content > .tab-pane {
+  display: block !important;
+}
+
+.panel-tabset > .tab-content {
+  border: none;
+  padding: 0;
+}
+
+.panel-tabset > .nav-tabs {
+  display: none;
+}
+
+.tabset-margin-container {
+  display: none;
+}
+
+.tab-pane > p {
+  padding-top: 0 !important;
+}
+
+}
 
 /* resize for mobile */
 

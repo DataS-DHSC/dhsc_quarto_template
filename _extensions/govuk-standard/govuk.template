@@ -40,7 +40,6 @@ $endif$
 
 <link rel="stylesheet" href="./_extensions/govuk-standard/GDS.css">
 
-
 <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container app-width-container app-header__container">
     <div class="govuk-header__logo app-header__logo">
@@ -88,6 +87,7 @@ $include-before$
 $endfor$
 $if(title)$
 <header id="title-block-header">
+<h1 class="title">$title$</h1>
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$
