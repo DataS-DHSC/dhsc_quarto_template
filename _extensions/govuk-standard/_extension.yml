@@ -7,12 +7,12 @@ contributes:
     html:
       template: govuk.template
       toc: true
-      toc-location: left
       toc-title: Sections
       toc-depth: 3
       embed-resources: true
       css: styles.css
-      lang: en
-      page-layout: full
       grid:
-        gutter-width: 5em
+        margin-width: 500px
+        gutter-width: 3em
+
+

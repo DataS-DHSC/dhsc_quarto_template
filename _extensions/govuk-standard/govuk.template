@@ -17,7 +17,7 @@ $if(description-meta)$
   <meta name="description" content="$description-meta$" />
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <link rel="icon" type="image/x-icon" href="./www/assets/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./_extensions/govuk-standard/assets/images/favicon.ico">
   <style>
     $styles.html()$
   </style>
@@ -39,7 +39,6 @@ $endif$
 </head>
 
 <link rel="stylesheet" href="./_extensions/govuk-standard/GDS.css">
-
 
 <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container app-width-container app-header__container">
@@ -70,20 +69,6 @@ $endif$
       </a>
     </div>
 
-    <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Regions &#9660;</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/England/summary.html">England</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/East_Midlands/summary.html">East Midlands</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/East_of_England/summary.html">East of England</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/London/summary.html">London</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/North_East/summary.html">North East</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/North_West/summary.html">North West</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/South_West/summary.html">South West</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/West_Midlands/summary.html">West Midlands</a>
-    <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/Yorkshire_and_the_Humber/summary.html">Yorkshire and the Humber</a>
-  </div>
-  </div>
 </header>
 <div class="govuk-phase-banner app-width-container">
   <p class="govuk-phase-banner__content">
@@ -96,34 +81,13 @@ $endif$
   </p>
 </div>
 
-<script>
-  /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
 <body>
 $for(include-before)$
 $include-before$
 $endfor$
 $if(title)$
 <header id="title-block-header">
+<h1 class="title">$title$</h1>
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$

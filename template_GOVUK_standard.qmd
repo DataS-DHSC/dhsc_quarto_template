@@ -3,17 +3,12 @@ title: 'Standard Template'
 
 format:
   govuk-standard-html
-  
 
 execute:
   echo: false
   warnings: false
   message: false
-  
 ---
-
-
-# Standard Template
 
 This template is an example of how to write a report in the **GOV.UK** style.
 
@@ -31,6 +26,8 @@ drop_down(title = 'Further information',
 
 You can learn more about controlling the appearance of HTML output here: <https://quarto.org/docs/output-formats/html-basics.html>
 
+### Subheader info
+Text which can also be linked to in TOC
 
 ::: {.panel-tabset}
 

@@ -147,7 +147,7 @@ table {
   overflow-x: auto;
 }
 
-td { 
+td {
   width: 20%;
 }
 
@@ -175,35 +175,33 @@ img:hover {
   text-decoration-thickness: 3px;
 }
 
+@media print {
+.panel-tabset > .tab-content > .tab-pane {
+  display: block !important;
+}
+
+.panel-tabset > .tab-content {
+  border: none;
+  padding: 0;
+}
+
+.panel-tabset > .nav-tabs {
+  display: none;
+}
+
+.tabset-margin-container {
+  display: none;
+}
+
+.tab-pane > p {
+  padding-top: 0 !important;
+}
+
+}
 
 .body-text {
 margin-left: 150px;
 font-size: 18px;
-}
-
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 
 
