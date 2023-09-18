@@ -38,12 +38,10 @@ $endif$
   <![endif]-->
 </head>
 
-<link rel="stylesheet" href="./_extensions/govuk-standard/GDS.css">
-
 <header class="govuk-header app-header" role="banner" data-module="govuk-header">
   <div class="govuk-header__container app-width-container app-header__container">
     <div class="govuk-header__logo app-header__logo">
-      <a href="https://testprofiles.phe.org.uk/static-reports/monthly-suveillance/England/summary.html" class="govuk-header__link govuk-header__link--homepage">
+      <a href="https://www.gov.uk/" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__logotype">
           <svg
             aria-hidden="true"
@@ -63,23 +61,10 @@ $endif$
             GOV.UK
           </span>
         </span>
-        <span class="govuk-header__product-name">
-          Health in England
-        </span>
       </a>
     </div>
 
 </header>
-<div class="govuk-phase-banner app-width-container">
-  <p class="govuk-phase-banner__content">
-    <strong class="govuk-tag govuk-phase-banner__content__tag">
-      Alpha
-    </strong>
-    <span class="govuk-phase-banner__text">
-      This is a new service – your <a class="govuk-link" href="mailto:PHA-OHID@dhsc.gov.uk">feedback</a> will help us to improve it.
-    </span>
-  </p>
-</div>
 
 <body>
 $for(include-before)$

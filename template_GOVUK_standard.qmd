@@ -6,8 +6,7 @@ format:
 
 execute:
   echo: false
-  warnings: false
-  message: false
+  warning: false
 ---
 
 This template is an example of how to write a report in the **GOV.UK** style.
@@ -34,8 +33,6 @@ Text which can also be linked to in TOC
 ## Tab 1
 
 ```{r Chart}
-#| warnings: false
-#| message: false
 
 library(plotly)
 
@@ -52,7 +49,7 @@ fig
 
 library(htmlTable)
 
-htmlTable(head(iris, 10), rnames=FALSE)
+htmlTable(head(iris, 10), rnames = FALSE)
 
 ```
 
@@ -77,3 +74,14 @@ iris %>%
 
 ```
 
+## Further heading
+
+More text here...
+
+### A Subheading 
+
+Different text here..
+
+## Another heading
+
+More text here...
