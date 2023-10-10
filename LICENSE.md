@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2023 dhsc_quarto_template authors
+Copyright (c) 2023 Crown Copyright (Department of Health and Social Care)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
