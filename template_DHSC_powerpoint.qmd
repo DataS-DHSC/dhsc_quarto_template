@@ -61,6 +61,12 @@ contents column 1...
 
 ::: column
 contents column 2...
+
+| name | amount |
+|------|-------:|
+| a    |    4.6 |
+| b    |    1.2 |
+| c    |    5.4 |
 :::
 :::
 

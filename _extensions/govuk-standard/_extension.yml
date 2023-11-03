@@ -10,7 +10,8 @@ contributes:
       toc-title: Sections
       toc-depth: 3
       embed-resources: true
-      css: styles.css
+      theme: styles.scss
+      css: GDS.css
       grid:
         margin-width: 500px
         gutter-width: 3em
