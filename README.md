@@ -26,4 +26,8 @@ This project includes the following quarto templates. Edit the relevant template
 
 `template_GOVUK_website.qmd` A HTML website with GovUK branding.
 
+* This template can be used with or without the navbar drop down
+* To remove the navbar drop down, simply remove lines 144-158 inclusive from <b>_extensions/govuk-website/govuk_website.template</b> and don't use the `folder` parameter in `html_sidebar()`
+* To edit the navbar drop down, go to lines 144-158 of the template above and change the URLs and names of each drop down inside the `<a></a>` tag
+
 ## 
