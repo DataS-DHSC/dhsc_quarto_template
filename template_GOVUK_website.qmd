@@ -1,5 +1,5 @@
 ---
-title: 'Website Template'
+title: 'GOV UK Website Template'
 
 format:
   govuk-website-html
@@ -78,7 +78,7 @@ fig
 
 library(htmlTable)
 
-htmlTable(head(iris, 10), rnames=FALSE)
+htmlTable(head(iris, 10), rnames = FALSE)
 
 ```
 

@@ -1,5 +1,3 @@
-library(stringr)
-
 #' Generate HTML sidebar of anchored links based on base URL
 #'
 #' `html_sidebar` produces HTML code for the sidebar on the details page with anchors
@@ -9,7 +7,7 @@ library(stringr)
 #' @param names vector, list of all page names
 #' @param folder character string, folder of current page in file structure
 #' @param subnames vector, list of section title names in page
-#' @import stringr
+
 html_sidebar <- function(base_url, selected, names, folder = "", subnames = NULL) {
 
   # add a forward slash if there are folders in the website project
@@ -21,7 +19,7 @@ html_sidebar <- function(base_url, selected, names, folder = "", subnames = NULL
 
   for (name in names) {
 
-    name1 <- str_to_lower(str_replace_all(name, " ", "_"))
+    name1 <- stringr::str_to_lower(stringr::str_replace_all(name, " ", "_"))
 
     # highlight the selected topic
     if (selected == name) {
@@ -46,10 +44,10 @@ html_sidebar <- function(base_url, selected, names, folder = "", subnames = NULL
 
         # remove punctuation & insert hyphens into spaces for anchor link
         chart2 <- chart |>
-          str_to_lower() |>
-          str_remove_all("[:+%,/'()]") |>
-          str_replace_all(" ", "-") |>
-          str_remove("-$")
+          stringr::str_to_lower() |>
+          stringr::str_remove_all("[:+%,/'()]") |>
+          stringr::str_replace_all(" ", "-") |>
+          stringr::str_remove("-$")
 
         # create full link for chart
         link <- paste0(subclass, base_url, folder, '/', name1, '.html#', chart2, '"> ', chart, '</a></li>')
@@ -77,7 +75,7 @@ html_sidebar <- function(base_url, selected, names, folder = "", subnames = NULL
 #'
 #' @param title character string, current topic
 #' @param description vector, list of all topic names
-#' @import stringr
+
 drop_down <- function(title, description) {
 
   html1 <- '<html><link rel="stylesheet" href="./_extensions/govuk-standard/GDS.css"><details class="govuk-details" data-module="govuk-details"><summary class="govuk-details__summary"><span class="govuk-details__summary-text">'
