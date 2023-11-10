@@ -7,7 +7,7 @@
 
 add_details <- function(title, description) {
 
-  html1 <- '<html><link rel="stylesheet" href="./_extensions/govuk-standard/GDS.css"><details class="govuk-details" data-module="govuk-details"><summary class="govuk-details__summary"><span class="govuk-details__summary-text">'
+  html1 <- '<html><details class="govuk-details" data-module="govuk-details"><summary class="govuk-details__summary"><span class="govuk-details__summary-text">'
 
   html2 <- '</span></summary><div class="govuk-details__text">'
 

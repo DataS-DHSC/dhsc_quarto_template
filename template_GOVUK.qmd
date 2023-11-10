@@ -1,8 +1,8 @@
 ---
-title: 'Standard GOVUK Template'
+title: 'GOVUK Template'
 
 format:
-  govuk-standard-html
+  govuk-html
 
 execute:
   echo: false
@@ -14,7 +14,7 @@ This template is an example of how to write a report in the **GOV.UK** style.
 
 ```{r drop down}
 #| results: "asis"
-source('_extensions/govuk-standard/html_functions.R')
+source('_extensions/govuk/html_functions.R')
 
 add_details(title = 'Further information', 
           description = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
