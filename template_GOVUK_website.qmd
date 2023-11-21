@@ -21,8 +21,10 @@ source('_extensions/govuk-website/html_functions.R')
 
 ```{r sidebar}
 #| results: "asis"
-  
-html_sidebar(selected = 'Page 1', 
+
+# Put the base URL of the home page here so that the links in the sidebar can be generated from it
+html_sidebar(base_url = 'https://fingertips.phe.org.uk',
+             selected = 'Page 1', 
              names = c('Page 1','Page 2','Page 3'), 
              folder = 'folder',
              subnames = c('Section 1','Section 2','Section 3'))

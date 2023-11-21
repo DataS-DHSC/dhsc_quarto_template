@@ -17,15 +17,25 @@ format:
 
 -   Create your powerpoint by choosing the types of slides you require and replacing the placeholder text with your contents.
 
--   To render the powerpoint, save this file and press render. The powerpoint file will export into your Downloads folder.
+-   To render the powerpoint, save this file and press render.
+
+**Tips:**
+
+-  Slides are defined with a level 2 heading (##). 
+
+-  To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point.
+
+-  [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts)
+
+-  Once rendered and in PowerPoint you can make further changes if required. 
 
 ## Title and Content slide
 
 To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)):
 
 ```{r}
-2+2
-
+#| results: asis
+cat(paste0("To combine text with code outputs, the code chunk options need to be 'results: asis' and the text needs to be within the cat() function. For example, there are ", nrow(mtcars), " cars in the mtcars dataset."))
 ```
 
 ## 
@@ -52,15 +62,18 @@ contents column 2...
 ::: column
 contents column 1...
 
-| name | amount |
-|------|-------:|
-| a    |    2.1 |
-| b    |    3.2 |
-| c    |    7.8 |
+```{r}
+htmlTable::htmlTable(head(mtcars[1:2]))
+```
+
 :::
 
 ::: column
 contents column 2...
+
+```{r}
+plot(head(mtcars[1:2]))
+```
 :::
 :::
 
@@ -68,11 +81,10 @@ contents column 2...
 
 Text
 
-| name | amount |
-|------|-------:|
-| a    |    2.1 |
-| b    |    3.2 |
-| c    |    7.8 |
+```{r}
+htmlTable::htmlTable(head(mtcars[1:2]))
+```
+
 
 ## Picture with Caption
 
