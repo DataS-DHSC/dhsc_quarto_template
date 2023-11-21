@@ -1,11 +1,12 @@
 #' HTML details component
 #'
-#' `add_details` produces HTML code for a details summary drop down
+#' `expander` produces HTML code for a details summary drop down, using HTML from
+#' the GOV.UK website under 'Details'
 #'
 #' @param title character string, current topic
 #' @param description vector, list of all topic names
 
-add_details <- function(title, description) {
+expander <- function(title, description) {
 
   html1 <- '<html><details class="govuk-details" data-module="govuk-details"><summary class="govuk-details__summary"><span class="govuk-details__summary-text">'
 
