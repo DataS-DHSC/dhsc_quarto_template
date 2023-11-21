@@ -21,6 +21,8 @@ format:
 
 **Tips:**
 
+-  Slides are defined with a level 2 heading (##). 
+
 -  To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point. 
 -  [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts)
 
