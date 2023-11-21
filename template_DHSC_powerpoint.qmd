@@ -21,9 +21,9 @@ format:
 
 **Tips:**
 
--  To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point. 
+-  To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point.
 
--  The slide type will be automatically detected based on the contents of the slide.
+-  [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts)
 
 -  Once rendered and in PowerPoint you can make further changes if required. 
 
