@@ -1,7 +1,7 @@
 #' HTML details component
 #'
 #' `expander` produces HTML code for a details summary drop down, using HTML from
-#' the GOV.UK website under 'Details'
+#' the GOV.UK Design System under 'Details': https://design-system.service.gov.uk/components/details/
 #'
 #' @param title character string, current topic
 #' @param description vector, list of all topic names
