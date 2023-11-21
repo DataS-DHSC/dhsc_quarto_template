@@ -193,10 +193,6 @@ font-size: 18px;
 
 
 #TOC a.active{
-  text-decoration: underline;
-  text-decoration-thickness: max(3px, .1875rem, .12em);
-  text-underline-offset: .1578em;
-  text-decoration-skip-ink: none;
   border: initial !important;
   border-left-style: solid !important;
 }
