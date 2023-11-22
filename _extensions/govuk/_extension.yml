@@ -9,7 +9,7 @@ contributes:
       toc: true
       toc-title: Sections
       toc-depth: 3
-      toc-location: left
+      toc-location: right
       embed-resources: true
       theme: styles.scss
       css: GDS.css
