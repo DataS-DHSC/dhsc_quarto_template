@@ -9,6 +9,8 @@ execute:
   warning: false
 ---
 
+
+
 This template is an example of how to write a report in the **GOV.UK** style.
 
 
@@ -17,7 +19,7 @@ This template is an example of how to write a report in the **GOV.UK** style.
 source('_extensions/govuk/html_functions.R')
 
 expander(title = 'Further information', 
-         description = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
+         details = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
 
 ```
 
@@ -95,3 +97,4 @@ Different text here..
 ## Another heading
 
 More text here...
+
