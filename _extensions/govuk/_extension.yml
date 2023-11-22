@@ -9,13 +9,16 @@ contributes:
       toc: true
       toc-title: Sections
       toc-depth: 3
-      toc-location: right
+      toc-location: left
       embed-resources: true
       theme: styles.scss
       css: GDS.css
       grid:
-        margin-width: 500px
-        gutter-width: 3em
+        sidebar-width: 200px
+        gutter-width: 1em
+        margin-width: 100px
+        body-width: 900px
+
 
 
 
