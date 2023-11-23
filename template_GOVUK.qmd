@@ -1,23 +1,25 @@
 ---
-title: 'Standard Template'
+title: 'GOVUK Template'
 
 format:
-  govuk-standard-html
+  govuk-html
 
 execute:
   echo: false
   warning: false
 ---
 
+
+
 This template is an example of how to write a report in the **GOV.UK** style.
 
 
 ```{r drop down}
 #| results: "asis"
-source('_extensions/govuk-standard/html_functions.R')
+source('_extensions/govuk/html_functions.R')
 
-drop_down(title = 'Further information', 
-          description = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
+expander(title = 'Further information', 
+         details = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
 
 ```
 
@@ -36,7 +38,17 @@ Text which can also be linked to in TOC
 
 library(plotly)
 
-fig <- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length)
+fig <- plot_ly(
+  data = iris,
+  x = ~Sepal.Length,
+  y = ~Petal.Length
+) |> 
+  config(displaylogo = FALSE,
+         modeBarButtons = list(list("toImage")),
+         toImageButtonOptions = list(format = "svg",
+                                     filename = "Chart",
+                                     width = 900,
+                                     height = 640))
 
 fig
 
@@ -59,7 +71,7 @@ htmlTable(head(iris, 10), rnames = FALSE)
 
 library(downloadthis)
 
-iris %>%
+iris |>
   download_this(
     output_name = 'My data',
     output_extension = ".csv",
@@ -85,3 +97,4 @@ Different text here..
 ## Another heading
 
 More text here...
+

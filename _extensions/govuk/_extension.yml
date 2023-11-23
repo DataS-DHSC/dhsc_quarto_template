@@ -1,4 +1,4 @@
-title: govuk-standard
+title: govuk
 author: Annabel Westermann
 version: 1.0.0
 quarto-required: ">=1.2.0"
@@ -9,12 +9,16 @@ contributes:
       toc: true
       toc-title: Sections
       toc-depth: 3
+      toc-location: left
       embed-resources: true
       theme: styles.scss
       css: GDS.css
       grid:
-        margin-width: 500px
-        gutter-width: 3em
+        sidebar-width: 200px
+        gutter-width: 1em
+        margin-width: 100px
+        body-width: 900px
+
 
 
 
