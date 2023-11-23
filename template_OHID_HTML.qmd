@@ -44,11 +44,10 @@ And more here
 
 Example table
 
-| name | amount |
-|------|-------:|
-| a    |    2.1 |
-| b    |    3.2 |
-| c    |    7.8 |
+```{r}
+#| echo: false
+htmlTable::htmlTable(head(mtcars[1:2]))
+```
 
 ## 2.3 Subheading 3
 
@@ -61,4 +60,4 @@ This is a [link](https://www.gov.uk/)
 
 Add an image
 
-![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png)
+![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png){fig-alt="OHID logo"}

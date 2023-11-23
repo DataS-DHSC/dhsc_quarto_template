@@ -21,20 +21,23 @@ format:
 
 **Tips:**
 
--  Slides are defined with a level 2 heading (##). 
+-   Slides are defined with a level 2 heading (##).
 
--  To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point. 
--  [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts)
+-   To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point.
 
--  Once rendered and in PowerPoint you can make further changes if required. 
+-   [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts)
+
+-   Once rendered and in PowerPoint you can make further changes if required.
 
 ## Title and Content slide
 
 To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)):
 
+To combine text with code outputs, the code chunk options need to be 'results: asis' and the text needs to be within the cat() function.
+
 ```{r}
 #| results: asis
-cat(paste0("To combine text with code outputs, the code chunk options need to be 'results: asis' and the text needs to be within the cat() function. For example, there are ", nrow(mtcars), " cars in the mtcars dataset."))
+cat(paste0("For example, there are ", nrow(mtcars), " cars in the mtcars dataset."))
 ```
 
 ## 
@@ -64,7 +67,6 @@ contents column 1...
 ```{r}
 htmlTable::htmlTable(head(mtcars[1:2]))
 ```
-
 :::
 
 ::: column
@@ -83,7 +85,6 @@ Text
 ```{r}
 htmlTable::htmlTable(head(mtcars[1:2]))
 ```
-
 
 ## Picture with Caption
 
