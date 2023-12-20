@@ -12,7 +12,7 @@ This will install the extensions and create example qmd files that you can use a
 
 ## Using
 
-This project includes the following quarto templates. Edit the relevant template and render.
+This project includes the following quarto templates. Edit the relevant template and render. Do not edit any file in the \_extensions folder.
 
 `template_DHSC_HTML.qmd` A standalone HTML report document with DHSC branding.
 
