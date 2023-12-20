@@ -14,7 +14,7 @@ execute:
 This template is an example of how to write a report in the **GOV.UK** style.
 
 
-```{r drop down}
+```{r expander}
 #| results: "asis"
 source('_extensions/govuk/html_functions.R')
 
