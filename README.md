@@ -22,6 +22,6 @@ This project includes the following quarto templates. Edit the relevant template
 
 `template_OHID_powerpoint.qmd` A PowerPoint using the OHID PowerPoint template.
 
-`template_GOVUK.qmd` A HTML document with GovUK branding.
+`template_GOVUK_HTML.qmd` A HTML document with GovUK branding.
 
 ## 
