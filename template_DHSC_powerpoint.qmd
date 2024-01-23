@@ -14,7 +14,7 @@ execute:
 
 # Section header slide
 
-## Title and Content slide
+## Guidance
 
 **To do:**
 
@@ -30,43 +30,52 @@ execute:
 
 -   To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point.
 
--   [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts)
+-   [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts).
 
 -   Once rendered and in PowerPoint you can make further changes if required.
 
-## Title and Content slide
 
-To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)):
+## Guidance continued
 
-To combine text with code outputs, the code chunk options need to be 'results: asis' and the text needs to be within the cat() function.
+To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)).
+
+To combine text with code outputs outputs, the code chunk options need to be 'results: asis' and the text needs to be within the cat() function.
 
 ```{r}
 #| results: asis
 cat(paste0("For example, there are ", nrow(mtcars), " cars in the mtcars dataset."))
 ```
 
+## Title and Content slide
+
+This is a Title and Content slide.
+
+-   Bullet point 1
+
+-   Bullet point 2
+
 ## 
 
-::: {.notes}
+::: notes
 Speaker notes go here. This is a blank slide.
 :::
 
 ## Two Content slide
 
-::: {.columns}
-::: {.column}
+::: columns
+::: column
 contents column 1...
 :::
 
-::: {.column}
+::: column
 contents column 2...
 :::
 :::
 
 ## Comparison slide
 
-::: {.columns}
-::: {.column}
+::: columns
+::: column
 contents column 1...
 
 ```{r}
@@ -74,8 +83,9 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 ```
 :::
 
-::: {.column}
+::: column
 contents column 2...
+
 
 ```{r}
 plot(head(mtcars[1:2]))
@@ -84,8 +94,6 @@ plot(head(mtcars[1:2]))
 :::
 
 ## Content with Caption
-
-Text
 
 ```{r}
 htmlTable::htmlTable(head(mtcars[1:2]))
@@ -97,6 +105,8 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 
 -   The file path for the image goes in the round brackets.
 
--   More options can be found on the [Quarto website](https://quarto.org/docs/authoring/figures.html)
+-   More options can be found on the [Quarto website](https://quarto.org/docs/authoring/figures.html).
+
+-   You need to manually add alt-text to figures by opening the presentation in PowerPoint.
 
 ![Logo](_extensions/DHSC/assets/DHSC_3268_AW.png)
