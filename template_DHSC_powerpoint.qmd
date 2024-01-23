@@ -30,12 +30,15 @@ execute:
 
 -   To add bullet points, use a hyphen followed by 2 spaces then the text, and a blank line between each bullet point.
 
+## Guidance (2)
+
+-   Quarto has seven slide layout which it can use, as shown in this example. However, all OHID slide layouts can be manually added in PowerPoint after it has been rendered.
+
 -   [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts).
 
 -   Once rendered and in PowerPoint you can make further changes if required.
 
-
-## Guidance continued
+## Guidance (3)
 
 To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)).
 
