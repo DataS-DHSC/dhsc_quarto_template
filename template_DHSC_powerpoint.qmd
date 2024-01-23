@@ -1,10 +1,15 @@
 ---
 title: "Powerpoint template"
 subtitle: "Presentation subtitle"
+output-file: DHSC_powerpoint_example
 author: "Author name"
 date: today
+number-sections: true
 format:
   DHSC-pptx
+execute:
+  echo: false
+  warning: false
 ---
 
 # Section header slide
@@ -42,26 +47,26 @@ cat(paste0("For example, there are ", nrow(mtcars), " cars in the mtcars dataset
 
 ## 
 
-::: notes
+::: {.notes}
 Speaker notes go here. This is a blank slide.
 :::
 
 ## Two Content slide
 
-::: columns
-::: column
+::: {.columns}
+::: {.column}
 contents column 1...
 :::
 
-::: column
+::: {.column}
 contents column 2...
 :::
 :::
 
 ## Comparison slide
 
-::: columns
-::: column
+::: {.columns}
+::: {.column}
 contents column 1...
 
 ```{r}
@@ -69,7 +74,7 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 ```
 :::
 
-::: column
+::: {.column}
 contents column 2...
 
 ```{r}

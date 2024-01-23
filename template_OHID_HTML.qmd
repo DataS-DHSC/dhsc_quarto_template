@@ -1,14 +1,18 @@
 ---
 title: Untitled
+output-file: OHID_HTML_example
 format:
   OHID-html: default
+execute:
+  echo: false
+  warning: false
 ---
 
 # 1 Heading
 
 ## 1.1 Subheading 1
 
-::: panel-tabset
+::: {.panel-tabset}
 ### Tab 1
 
 This is tab 1

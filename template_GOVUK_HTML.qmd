@@ -1,9 +1,8 @@
 ---
 title: 'GOVUK Template'
-
+output-file: GOVUK_HTML_example
 format:
   govuk-html
-
 execute:
   echo: false
   warning: false
