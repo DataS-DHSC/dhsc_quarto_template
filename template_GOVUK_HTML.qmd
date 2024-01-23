@@ -8,30 +8,48 @@ execute:
   warning: false
 ---
 
-
-
 This template is an example of how to write a report in the **GOV.UK** style.
 
+You can edit this file and press the `Render` button to produce a HTML document.
 
-```{r expander}
-#| results: "asis"
-source('_extensions/govuk/html_functions.R')
+When using the GOVUK template, use two hash symbols for headings and three hash
+symbols for subheadings.
 
-expander(title = 'Further information', 
-         details = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
+You can learn more about controlling the appearance of HTML output on the [quarto website](https://quarto.org/docs/output-formats/html-basics.html).
+
+## A heading
+
+Some text here....
+
+### A subheading
+
+Text under a subheading...
+
+## Further heading
+
+More text here...
+
+### A Subheading
+
+Different text here...
+
+### Another Subheading
+
+More text here...
+
+## Quarto HTML tips
+
+Example of adding a table using the htmlTable package.
+
+```{r Data table}
+
+library(htmlTable)
+
+htmlTable(head(iris, 10), rnames = FALSE)
 
 ```
 
-## More Information 
-
-You can learn more about controlling the appearance of HTML output here: <https://quarto.org/docs/output-formats/html-basics.html>
-
-### Subheader info
-Text which can also be linked to in TOC
-
-::: {.panel-tabset}
-
-## Tab 1
+Example of producing an interactive chart using the plotly package.
 
 ```{r Chart}
 
@@ -53,18 +71,21 @@ fig
 
 ```
 
+Example of producing a tabset.
+
+::: panel-tabset
+## Tab 1
+
+Text on tab 1.
 
 ## Tab 2
 
-```{r Data table}
-
-library(htmlTable)
-
-htmlTable(head(iris, 10), rnames = FALSE)
-
-```
-
+Text on tab 2.
 :::
+
+## GOVUK specific template features
+
+Create a GOVUK styled button to download a dataset. This uses the downloadthis package and the "govuk-button govuk-button--secondary" class provided by GOVUK template.
 
 ```{r Download button}
 
@@ -85,15 +106,13 @@ iris |>
 
 ```
 
-## Further heading
+An example of adding an "expander" to provide a drop down with further information
 
-More text here...
+```{r expander}
+#| results: "asis"
+source('_extensions/govuk/html_functions.R')
 
-### A Subheading 
+expander(title = 'Further information', 
+         details = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
 
-Different text here..
-
-## Another heading
-
-More text here...
-
+```

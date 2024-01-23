@@ -8,60 +8,86 @@ execute:
   warning: false
 ---
 
-# 1 Heading
+This template is an example of how to write a report in the **OHID** style.
 
-## 1.1 Subheading 1
+You can edit this file and press the `Render` button to produce a HTML document.
 
-::: {.panel-tabset}
-### Tab 1
+When using the OHID template, use one hash symbol for headings and two hash
+symbols for subheadings and so on. Up to five levels of heading can be used (five
+hash symbols).
 
-This is tab 1
+You can learn more about controlling the appearance of HTML output on the [quarto website](https://quarto.org/docs/output-formats/html-basics.html).
 
-Add a chart
+# A heading
 
-```{r}
-# Code to generate chart
-plot(mtcars$carb)
+Some text here....
+
+## A subheading
+
+Text under a subheading...
+
+# Further heading
+
+More text here...
+
+## A Subheading
+
+Different text here...
+
+### Third level subheading
+
+#### Fourth level subheading
+
+Some text here...
+
+##### Fifth level subheading
+
+## Another Subheading
+
+More text here...
+
+# Quarto HTML tips
+
+Example of adding a table using the htmlTable package.
+
+```{r Data table}
+
+library(htmlTable)
+
+htmlTable(head(iris, 10), rnames = FALSE)
+
 ```
 
-### Tab 2
+Example of producing an interactive chart using the plotly package.
 
-This is tab 2
+```{r Chart}
+
+library(plotly)
+
+fig <- plot_ly(
+  data = iris,
+  x = ~Sepal.Length,
+  y = ~Petal.Length
+) |> 
+  config(displaylogo = FALSE,
+         modeBarButtons = list(list("toImage")),
+         toImageButtonOptions = list(format = "svg",
+                                     filename = "Chart",
+                                     width = 900,
+                                     height = 640))
+
+fig
+
+```
+
+Example of producing a tabset.
+
+::: panel-tabset
+# Tab 1
+
+Text on tab 1.
+
+# Tab 2
+
+Text on tab 2.
 :::
-
-## 1.2 Subheading 2
-
-New subheading.
-
-
-# 2 Heading 2
-
-Some text here
-
-## 2.1 Subheading 1
-
-More here but this time in **BOLD**
-
-## 2.2 Subheading 2
-
-And more here
-
-Example table
-
-```{r}
-#| echo: false
-htmlTable::htmlTable(head(mtcars[1:2]))
-```
-
-## 2.3 Subheading 3
-
-This is a [link](https://www.gov.uk/)
-
-```{r}
-# This is a code chunk
-1 + 1
-```
-
-Add an image
-
-![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png){fig-alt="OHID logo"}

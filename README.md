@@ -12,7 +12,7 @@ This will install the extensions and create example qmd files that you can use a
 
 ## Using
 
-This project includes the following quarto templates. Edit the relevant template and render. Do not edit any file in the \_extensions folder.
+This project includes the following quarto templates. Edit the relevant template and click the render button to produce a document. Do not edit any file in the \_extensions folder.
 
 `template_DHSC_HTML.qmd` A standalone HTML report document with DHSC branding.
 
@@ -24,4 +24,6 @@ This project includes the following quarto templates. Edit the relevant template
 
 `template_GOVUK_HTML.qmd` A HTML document with GovUK branding.
 
-## 
+## Accessibility
+
+For guidance of making reports, charts and tables accessible, please see the [analysis function website](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/).
