@@ -32,7 +32,7 @@ execute:
 
 ## Guidance (2)
 
--   Quarto has seven slide layout which it can use, as shown in this example. However, all OHID slide layouts can be manually added in PowerPoint after it has been rendered.
+-   Quarto has seven styles of slide layout which it can use, as shown in this example. However, additional DHSC slide layouts can be manually added in PowerPoint after it has been rendered.
 
 -   [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts).
 
