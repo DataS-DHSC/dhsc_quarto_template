@@ -27,3 +27,6 @@ This project includes the following quarto templates. Edit the relevant template
 ## Accessibility
 
 For guidance of making reports, charts and tables accessible, please see the [analysis function website](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/).
+
+## Updating GOV.UK CSS
+You can find the most up-to-date GOV.UK style on the [GDS](https://design-system.service.gov.uk/)
