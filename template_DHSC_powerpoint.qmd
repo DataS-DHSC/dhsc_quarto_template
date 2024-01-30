@@ -32,17 +32,17 @@ execute:
 
 ## Guidance (2)
 
--   Quarto has seven styles of slide layout which it can use, as shown in this example. However, additional DHSC slide layouts can be manually added in PowerPoint after it has been rendered.
+-   Quarto has seven styles of slide layouts which it can use, as shown in this example. However, additional DHSC slide layouts can be manually added in PowerPoint after it has been rendered.
 
 -   [Information about slide types](https://quarto.org/docs/presentations/powerpoint.html#slide-layouts).
 
--   Once rendered and in PowerPoint you can make further changes if required.
+-   Once rendered and in PowerPoint, you can make further changes if required.
 
 ## Guidance (3)
 
 To add R code or an R output (see options on the [Quarto website](https://quarto.org/docs/reference/cells/cells-knitr.html#overview)).
 
-To combine text with code outputs outputs, the code chunk options need to be 'results: asis' and the text needs to be within the cat() function.
+To combine text with code outputs, the code chunk options need to be `results: asis` and the text needs to be within the `cat()` function.
 
 ```{r}
 #| results: asis
@@ -104,7 +104,7 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 
 ## Picture with Caption
 
--   The caption for the image goes in the square brackets, this can be left blank if no caption is needed.
+-   The caption for the image goes in the square brackets - this can be left blank if no caption is needed.
 
 -   The file path for the image goes in the round brackets.
 
