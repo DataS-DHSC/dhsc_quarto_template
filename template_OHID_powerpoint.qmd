@@ -111,4 +111,4 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 
 -   You need to manually add alt-text to figures by opening the presentation in PowerPoint.
 
-![Logo](_extensions/OHID/assets/OHID_3268_MASTER_AW.png){width="274"}
+![Logo](example_image.png)
