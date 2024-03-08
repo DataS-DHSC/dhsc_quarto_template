@@ -89,7 +89,6 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 ::: column
 contents column 2...
 
-
 ```{r}
 plot(head(mtcars[1:2]))
 ```
@@ -112,4 +111,4 @@ htmlTable::htmlTable(head(mtcars[1:2]))
 
 -   You need to manually add alt-text to figures by opening the presentation in PowerPoint.
 
-![Logo](_extensions/DHSC/assets/DHSC_3268_AW.png)
+![Logo](example_image.png)

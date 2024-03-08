@@ -110,7 +110,8 @@ An example of adding an "expander" to provide a drop down with further informati
 
 ```{r expander}
 #| results: "asis"
-source('_extensions/govuk/html_functions.R')
+
+source('Scripts/html_functions.R')
 
 expander(title = 'Further information', 
          details = 'Details of the section that you may not want to show as part of the main page but as extra information for anyone particularly interested.')
