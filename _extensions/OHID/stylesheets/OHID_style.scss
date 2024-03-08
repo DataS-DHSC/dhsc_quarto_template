@@ -79,7 +79,7 @@ h5 {
 
 #TOC a:hover{
   text-decoration: underline;
-  text-decoration-thickness: max(3px, .1875rem, .12em);
+  //text-decoration-thickness: max(3px, .1875rem, .12em);
   text-underline-offset: .1578em;
   text-decoration-skip-ink: none;
   color: #006652 !important;
@@ -87,7 +87,7 @@ h5 {
 
 a {
   text-decoration: underline;
-  text-decoration-thickness: max(1px, .0625rem);
+  //text-decoration-thickness: max(1px, .0625rem);
   text-underline-offset: .1578em;
   text-decoration-skip-ink: none;
 }
@@ -95,7 +95,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-thickness: max(3px, .1875rem, .12em);
+  //text-decoration-thickness: max(3px, .1875rem, .12em);
   text-underline-offset: .1578em;
   text-decoration-skip-ink: none;
   color: #006652 !important;
@@ -120,7 +120,7 @@ a.nav-link:visited {
 a.nav-link:hover {
   color: rgb(73, 80, 87) !important;
   text-decoration: underline;
-  text-decoration-thickness: max(3px, .1875rem, .12em);
+  //text-decoration-thickness: max(3px, .1875rem, .12em);
   text-underline-offset: .1578em;
   text-decoration-skip-ink: none;
 }
