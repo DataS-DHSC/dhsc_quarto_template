@@ -15,7 +15,6 @@ contributes:
       theme:
         - default
         - stylesheets/OHID_style.scss
-      page-layout: full
     pptx:
       reference-doc: OHID-PPT-template.pptx
       date-format: "[Published ]DD/MM/YYYY"
