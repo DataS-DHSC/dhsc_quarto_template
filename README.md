@@ -1,18 +1,25 @@
 # DHSC quarto templates
 
+This repo provides custom quarto formats to produce DHSC, OHID or GOVUK themed documents.
+
 ## Installing
 
-To install the DHSC quarto templates, create a new project folder (e.g. an R studio project) and enter the following in the terminal
+To start a new project using the custom formats, enter the following in the terminal: 
 
 ``` bash
 quarto use template DataS-DHSC/dhsc_quarto_template
 ```
+This will create a new folder with example qmd files that you can use as the starting point of your document. 
 
-This will install the extensions and create example qmd files that you can use as a starting place for your document.
+Alternatively, to install the formats in an existing project, without the example qmd files, enter the following in the terminal: 
+
+``` bash
+quarto add DataS-DHSC/dhsc_quarto_template
+```
 
 ## Using
 
-This project includes the following quarto templates. Edit the relevant template and click the render button to produce a document. Do not edit any file in the \_extensions folder.
+If installed using the `quarto use template` command, the project includes the following example qmd files. Rename and edit the relevant template and click the RStudio render button to produce a document. 
 
 `template_DHSC_HTML.qmd` A standalone HTML report document with DHSC branding.
 
@@ -24,9 +31,14 @@ This project includes the following quarto templates. Edit the relevant template
 
 `template_GOVUK_HTML.qmd` A HTML document with GovUK branding.
 
+If you have installed the formats in an existing project using the `quarto add` command, you can manually download and add the template qmd files from this repo. Alternatively, create a blank qmd file and set the yaml to the relevant custom format:
+`DHSC-html`, `DHSC-pptx`, `OHID-html`, `OHID-pptx`, `govuk-html`
+
+Do not edit any file in the \_extensions folder.
+
 ## Accessibility
 
 For guidance of making reports, charts and tables accessible, please see the [analysis function website](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/).
 
-## Updating GOV.UK CSS
+## Developer Notes: Updating GOV.UK CSS
 You can find the most up-to-date GOV.UK style on the [GDS](https://design-system.service.gov.uk/).
