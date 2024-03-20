@@ -31,7 +31,7 @@ If installed using the `quarto use template` command, the project includes the f
 
 `template_GOVUK_HTML.qmd` A HTML document with GovUK branding.
 
-Alternatively, create a blank qmd file and set the yaml to the relevant custom format:
+If you have installed the formats in an existing project using the 'quarto add' command you can manually download and add the template qmd files from this repo. Alternatively, create a blank qmd file and set the yaml to the relevant custom format:
 `DHSC-html`, `DHSC-pptx`, `OHID-html`, `OHID-pptx`, `govuk-html`
 
 Do not edit any file in the \_extensions folder.
