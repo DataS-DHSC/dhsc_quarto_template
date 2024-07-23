@@ -1,8 +1,5 @@
 /*-- scss:defaults --*/
-$link-color: #00947E;
-$toc-active-border: #006652;
-$toc-inactive-border: #006652;
-$toc-font-size: 17px;
+$toc-active-border: #1d70b8;
 
 /*-- scss:rules --*/
 
@@ -11,6 +8,14 @@ body {
     line-height: 1.5em;
     font-family: Arial, sans-serif;
 }
+
+.DHSC_logo {
+  padding:30px 0 30px 0;
+  height:190px
+}
+
+
+/* Headings */
 
 h1.title {
     color: white;
@@ -24,7 +29,6 @@ h1.title {
 }
 
 h1 {
-    color: #00A88F;
     text-align: left;
     line-height: 100%;
     font-size: 36px;
@@ -34,7 +38,6 @@ h1 {
 }
 
 h2 {
-    color: #00A88F;
     line-height: 100%;
     text-align: left;
     font-size: 30px;
@@ -44,7 +47,6 @@ h2 {
 }
 
 h3 {
-    color: #00A88F;
     line-height: 100%;
     text-align: left;
     font-size: 24px;
@@ -64,17 +66,17 @@ h5 {
     border-bottom: none;
 }
 
-.DHSC_logo {
-  padding:30px 0 30px 0;
-  height:190px
-}
+
+/* TOC */
 
 #toc-title {
   display: none;
 }
 
-#TOC {
-  color: #00947E !important;
+#TOC a {
+  font-size:16px;
+  color: #1d70b8 !important;
+  border: none !important;
 }
 
 #TOC a:hover{
@@ -82,48 +84,72 @@ h5 {
   //text-decoration-thickness: max(3px, .1875rem, .12em);
   text-underline-offset: .1578em;
   text-decoration-skip-ink: none;
-  color: #006652 !important;
-}
-
-a {
-  text-decoration: underline;
-  //text-decoration-thickness: max(1px, .0625rem);
-  text-underline-offset: .1578em;
-  text-decoration-skip-ink: none;
+  color: #003078 !important;
+  border: none !important;
 }
 
 
-a:hover {
-  text-decoration: underline;
-  //text-decoration-thickness: max(3px, .1875rem, .12em);
-  text-underline-offset: .1578em;
-  text-decoration-skip-ink: none;
-  color: #006652 !important;
+#TOC a.active{
+  border: initial !important;
+  border-left-style: solid !important;
+}
+
+
+.nav-link {
+  color: #1d70b8
+}
+
+
+/* Links */
+
+a:link {
+  color: #1d70b8;
 }
 
 a:visited {
   color: #4c2c92;
 }
 
-.panel-tabset > .nav-tabs > a {
-  color: #006652 !important;
+a:active {
+  color: none;
+  background-color: none;
 }
 
-a.nav-link {
-  color: rgb(73, 80, 87) !important;
+a:hover {
+  color: #003078;
+  //text-decoration-thickness: 3px;
 }
 
-a.nav-link:visited {
-  color: rgb(73, 80, 87) !important;
+p a:active {
+  color: black;
+  background-color: #ffdd00;
+  //text-decoration-thickness: 3px;
 }
 
-a.nav-link:hover {
-  color: rgb(73, 80, 87) !important;
+
+/* styling for panel tabset headings */
+.panel-tabset .nav-item,
+.panel-tabset .nav-item a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.panel-tabset .nav-item a:hover {
   text-decoration: underline;
-  //text-decoration-thickness: max(3px, .1875rem, .12em);
-  text-underline-offset: .1578em;
-  text-decoration-skip-ink: none;
+  //text-decoration-thickness: 3px;
 }
+
+.panel-tabset .nav-item a:active,
+.panel-tabset .nav-item a:focus {
+  font-weight:700;
+  text-decoration: underline;
+  //text-decoration-thickness: 3px;
+}
+
+
+
+/* Printing */
+
 
 @media print {
 .panel-tabset > .tab-content > .tab-pane {
