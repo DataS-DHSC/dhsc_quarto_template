@@ -1,0 +1,67 @@
+---
+title: Untitled
+output-file: DHSC_word_example
+format:
+  DHSC-docx:
+    date: 09/08/2024
+    toc: true
+execute:
+  echo: false
+  warning: false
+---
+
+This template is an example of how to write a report in the **DHSC** style.
+
+When using the DHSC template, use one hash symbol for headings and two hash symbols for subheadings and so on. Up to five levels of heading can be used (five hash symbols).
+
+This is an example of adding a link [quarto website](https://quarto.org/docs/output-formats/html-basics.html).
+
+# A heading
+
+Some text here....
+
+## A subheading
+
+Text under a subheading...
+
+# Further heading
+
+This paragraph has bullet points
+
+-   First bullet point
+
+-   Second bullet point
+
+Numbered bullet points
+
+1.  line 1
+
+2.  line 2
+
+## Second level subheading
+
+Here is example of a table
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| a    | 1    | 4    |
+| b    | 2    | 5    |
+| c    | 3    | 6    |
+
+: This is the table caption
+
+### Third level subheading
+
+Add a footnote [^1]
+
+[^1]: This is the footnote
+
+#### Fourth level subheading
+
+![image caption](example_image.png){fig-alt="here is the alt text"}
+
+##### Fifth level subheading
+
+Sixth level subheading
+
+## 
