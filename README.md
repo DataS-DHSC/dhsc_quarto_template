@@ -38,12 +38,9 @@ Do not edit any file in the \_extensions folder.
 
 ## Updating extensions
 
-The `quarto update extension` command can be run to ensure access to the latest extensions related to to the template.
+To update configured extensions for the templates, the following command can be used in the terminal:
 
-You can list and update configured extensions for the templates with the following commands:
-
-`quarto list extensions`
-`quarto update DataS-DHSC/dhsc_quarto_template/<extension>`
+`quarto update DataS-DHSC/dhsc_quarto_template`
 
 Further information on managing extensions can be found [here.](https://quarto.org/docs/extensions/managing.html#updating)
 
