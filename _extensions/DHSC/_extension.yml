@@ -11,6 +11,7 @@ contributes:
       toc_float: true
       toc_depth: 3
       toc-location: left
+      page-layout: full
       include-before-body: "stylesheets/DHSC_logo.html"
       theme:
         - default
