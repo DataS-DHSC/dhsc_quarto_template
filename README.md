@@ -36,17 +36,6 @@ If you have installed the formats in an existing project using the `quarto add` 
 
 Do not edit any file in the \_extensions folder.
 
-## Updating extensions
-
-The `quarto update` command can be run to ensure access to the latest extensions related to to the template.
-
-You can list and update configured extensions for the templates with the following commands:
-
-`quarto list extensions`
-`quarto update quarto-ext/your extension here`
-
-Further information on managing extensions can be found [here.](https://quarto.org/docs/extensions/managing.html#updating)
-
 ## Accessibility
 
 For guidance of making reports, charts and tables accessible, please see the [analysis function website](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/).
