@@ -6,10 +6,8 @@ contributes:
   formats:
     html:
       embed-resources: true
-      standalone: true
       toc: true
-      toc_float: true
-      toc_depth: 3
+      toc-depth: 3
       toc-location: left
       page-layout: full
       include-before-body: "stylesheets/OHID_logo.html"
