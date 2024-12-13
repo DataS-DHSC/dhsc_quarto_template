@@ -6,7 +6,6 @@ contributes:
   formats:
     html:
       embed-resources: true
-      standalone: true
       toc: true
       toc_float: true
       toc_depth: 3
