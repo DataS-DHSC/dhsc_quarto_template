@@ -7,8 +7,7 @@ contributes:
     html:
       embed-resources: true
       toc: true
-      toc_float: true
-      toc_depth: 3
+      toc-depth: 3
       toc-location: left
       page-layout: full
       include-before-body: "stylesheets/DHSC_logo.html"
