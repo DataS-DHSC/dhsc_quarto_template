@@ -4,7 +4,6 @@ subtitle: "Presentation subtitle"
 output-file: DHSC_powerpoint_example
 author: "Author name"
 date: today
-number-sections: true
 format:
   DHSC-pptx
 execute:
@@ -97,18 +96,8 @@ plot(head(mtcars[1:2]))
 
 ## Content with Caption
 
+Text before the content.
+
 ```{r}
 htmlTable::htmlTable(head(mtcars[1:2]))
 ```
-
-## Picture with Caption
-
--   The caption for the image goes in the square brackets - this can be left blank if no caption is needed.
-
--   The file path for the image goes in the round brackets.
-
--   More options can be found on the [Quarto website](https://quarto.org/docs/authoring/figures.html).
-
--   You need to manually add alt-text to figures by opening the presentation in PowerPoint.
-
-![Logo](example_image.png)
