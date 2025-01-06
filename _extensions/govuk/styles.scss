@@ -10,6 +10,9 @@ body {
   -moz-osx-font-smoothing:grayscale;
 }
 
+
+/* !!!---- STYLES TO UPDATE FROM DESIGN SYTEM CSS ----!!! */
+
 /*.govuk-heading-xl*/
 h1 {
   font-weight:700;
@@ -73,6 +76,10 @@ p.lead {
   margin-bottom:20px
 }
 
+
+/* !!!---- END STYLES TO UPDATE FROM DESIGN SYTEM CSS ----!!! */
+
+
 a:link {
   color: #1d70b8;
 }
@@ -123,8 +130,6 @@ h3 a:visited {
   color: black;
   text-decoration: none;
 }
-
-
 
 
 table {

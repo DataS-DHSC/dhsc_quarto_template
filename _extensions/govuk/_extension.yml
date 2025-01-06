@@ -5,19 +5,16 @@ quarto-required: ">=1.2.0"
 contributes:
   formats:
     html:
+      embed-resources: true
       template: govuk.template
       toc: true
       toc-title: Sections
       toc-depth: 3
       toc-location: left
-      embed-resources: true
       theme: styles.scss
       css: GDS.css
-      grid:
-        sidebar-width: 200px
-        gutter-width: 1em
-        margin-width: 100px
-        body-width: 900px
+      page-layout: full
+
 
 
 
