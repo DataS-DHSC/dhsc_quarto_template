@@ -11,6 +11,8 @@ quarto use template DataS-DHSC/dhsc_quarto_template
 ```
 This will create a new folder with example qmd files that you can use as the starting point of your document. 
 
+If you are working in RStudio, it is advisable to run the above command first and then create an RStudio project in the new folder.
+
 Alternatively, to install the formats in an existing project, without the example qmd files, enter the following in the terminal: 
 
 ``` bash
@@ -35,6 +37,15 @@ If you have installed the formats in an existing project using the `quarto add` 
 `DHSC-html`, `DHSC-pptx`, `OHID-html`, `OHID-pptx`, `govuk-html`
 
 Do not edit any file in the \_extensions folder.
+
+
+## Updating extensions
+
+To update to use the latest version of the templates, the following command can be used in the terminal:
+
+`quarto update DataS-DHSC/dhsc_quarto_template`
+
+Further information on managing extensions can be found on the [quarto website](https://quarto.org/docs/extensions/managing.html#updating).
 
 ## Accessibility
 

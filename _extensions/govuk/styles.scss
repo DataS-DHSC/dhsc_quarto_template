@@ -10,6 +10,9 @@ body {
   -moz-osx-font-smoothing:grayscale;
 }
 
+
+/* !!!---- STYLES TO UPDATE FROM DESIGN SYTEM CSS ----!!! */
+
 /*.govuk-heading-xl*/
 h1 {
   font-weight:700;
@@ -73,6 +76,10 @@ p.lead {
   margin-bottom:20px
 }
 
+
+/* !!!---- END STYLES TO UPDATE FROM DESIGN SYTEM CSS ----!!! */
+
+
 a:link {
   color: #1d70b8;
 }
@@ -88,13 +95,13 @@ a:active {
 
 a:hover {
   color: #003078;
-  //text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 p a:active {
   color: black;
   background-color: #ffdd00;
-  //text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 
@@ -108,14 +115,14 @@ h3 a:link {
 h3 a:hover {
   color: #003078;
   text-decoration: underline;
-  //text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 h3 a:active {
   color: black;
   text-decoration: underline;
   background-color: #ffdd00;
-  //text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 
@@ -123,8 +130,6 @@ h3 a:visited {
   color: black;
   text-decoration: none;
 }
-
-
 
 
 table {
@@ -154,14 +159,14 @@ img:hover {
 
 .panel-tabset .nav-item a:hover {
   text-decoration: underline;
-  //text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 .panel-tabset .nav-item a:active,
 .panel-tabset .nav-item a:focus {
   font-weight:700;
   text-decoration: underline;
-  //text-decoration-thickness: 3px;
+  text-decoration-thickness: 3px;
 }
 
 
@@ -184,7 +189,7 @@ font-size: 18px;
 
 #TOC a:hover{
   text-decoration: underline;
-  //text-decoration-thickness: max(3px, .1875rem, .12em);
+  text-decoration-thickness: max(3px, .1875rem, .12em);
   text-underline-offset: .1578em;
   text-decoration-skip-ink: none;
   color: #003078 !important;
