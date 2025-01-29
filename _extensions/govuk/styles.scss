@@ -206,6 +206,11 @@ font-size: 18px;
   color: #1d70b8
 }
 
+/* section numbering */
+.header-section-number {
+    color: inherit;
+}
+
 .table>:not(caption)>*>* {
   box-shadow: None;
 }
