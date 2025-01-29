@@ -1,3 +1,6 @@
+# DHSC v(1.0.4), OHID (1.0.4), GOVUK (1.0.4)
+* Styling of section numbering updated for OHID, DHSC and GOVUK HTML templates. When used, section numbering for headers within the body and within the table of contents now matches the colour of those sections.
+
 # DHSC v(1.0.3), OHID (1.0.3), GOVUK (1.0.3)
 * OHID, DHSC and GOVUK HTML templates updated to use the new crown logo.
 * GOVUK template updated to use latest GDS css file.
