@@ -5,6 +5,7 @@ quarto-required: ">=1.2.0"
 contributes:
   formats:
     html:
+      html-table-processing: none
       embed-resources: true
       toc: true
       toc-depth: 3

@@ -150,7 +150,19 @@ p a:active {
   text-decoration-thickness: 3px;
 }
 
+/* Tables */
 
+table {
+  background-color: white !important;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+td {
+  width: 20%;
+  line-height: 1.2;
+}
 
 /* Printing */
 
