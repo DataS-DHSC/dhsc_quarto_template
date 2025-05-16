@@ -1,3 +1,6 @@
+# GOVUK (1.0.5)
+* Header title in HTML template has been changed from GOVUK to DHSC.
+
 # DHSC v(1.0.4), OHID (1.0.4), GOVUK (1.0.4)
 * Styling of section numbering updated for OHID, DHSC and GOVUK HTML templates. When used, section numbering for headers within the body and within the table of contents now matches the colour of those sections.
 
