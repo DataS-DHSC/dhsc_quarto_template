@@ -1,3 +1,6 @@
+# GOVUK (1.1.0)
+* New header and footer images changed from GOV.UK Frontend v5.7.1 to v5.11.1
+
 # GOVUK (1.0.5)
 * Header title in HTML template has been changed from GOVUK to DHSC.
 
