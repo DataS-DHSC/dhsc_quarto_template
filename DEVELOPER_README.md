@@ -24,16 +24,18 @@ don't have permission to use e.g.
 
 7.  In GDS.css search for all instances of `font-family:GDS Transport,` and delete `GDS Transport,`
 
-8.  In GDS.css search for filepaths starting `/assets/images` and delete the initial `/`. This allows 
+8. Delete font folder and its contents, found in the Asset folder.
+
+9.  In GDS.css search for filepaths starting `/assets/images` and delete the initial `/`. This allows 
 the filepath to be identified correctly.
 
-9.  Open `_extensions/govuk/govuk.template.` Replace code between the two `header` tags with 
+10.  Open `_extensions/govuk/govuk.template.` Replace code between the two `header` tags with 
 the [latest HTML code for the header component](https://design-system.service.gov.uk/components/header/) from the 
 design system website. Do the same for the [footer](https://design-system.service.gov.uk/components/footer/).
 
-10. If there have been changes to the styling of headings in the GDS CSS, these will 
+11. If there have been changes to the styling of headings in the GDS CSS, these will 
 need to be updated in `_extensions/govuk/styles.scss`. This is because quarto doesn't produce text with
 the classes that the GDS css is expecting.
 
-11. Update News.md and _extension.yml files with new version name and 
+12. Update News.md and _extension.yml files with new version name and 
 description of what has changed/added/removed.
