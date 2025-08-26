@@ -1,5 +1,7 @@
 # Updating govuk HTML extension
 
+0. Choose correct GIT branch and pull or create new branch from main.
+
 1.  To find out which version of the GOV.UK frontend is currently being used, 
 open `_extensions/govuk/GDS.css` and search for `root{--govuk-frontend-version:` (should be near the 
 beginning). Compare this
@@ -39,3 +41,5 @@ the classes that the GDS css is expecting.
 
 12. Update News.md and _extension.yml files with new version name and 
 description of what has changed/added/removed.
+
+13. Commit, add comments, and push to GIT
