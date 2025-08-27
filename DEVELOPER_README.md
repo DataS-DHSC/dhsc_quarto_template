@@ -38,6 +38,10 @@ the filepath to be identified correctly.
 the [latest HTML code for the header component](https://design-system.service.gov.uk/components/header/) from the 
 design system website. Do the same for the [footer](https://design-system.service.gov.uk/components/footer/).
 
+10.5  NB Some more specific editing or reorganizing may be needed - see https://design-system.service.gov.uk/components/footer/ for
+how the code may be best implemented. WARNING: HTML order does impact the output (e.g. header is placed inside
+the body) so it is recommended to have a spare copy of the govuk.template code readily available.
+
 11. If there have been changes to the styling of headings in the GDS CSS, these will 
 need to be updated in `_extensions/govuk/styles.scss`. This is because quarto doesn't produce text with
 the classes that the GDS css is expecting.
