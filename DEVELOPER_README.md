@@ -26,7 +26,8 @@ don't have permission to use e.g.
 
     `/*! Copyright (c) 2011 by Margaret Calvert & Henrik Kubel. All rights reserved. The font has been customised for exclusive use on gov.uk. This cut is not commercially available. */@font-face{font-family:GDS Transport;font-style:normal;font-weight:400;src:url(/assets/fonts/light-94a07e06a1-v2.woff2) format("woff2"),url(/assets/fonts/light-f591b13f7d-v2.woff) format("woff");font-display:fallback}@font-face{font-family:GDS Transport;font-style:normal;font-weight:700;src:url(/assets/fonts/bold-b542beb274-v2.woff2) format("woff2"),url(/assets/fonts/bold-affa96571d-v2.woff) format("woff");font-display:fallback}`
 
-7.  In GDS.css search for all instances of `font-family:GDS Transport,` and delete `GDS Transport,`
+7.  In GDS.css search for all instances of `font-family:GDS Transport,` and delete `GDS Transport,`, easy option is to
+control f/search for "font-family:GDS Transport," and replace with "font-family:"
 
 8.   Delete font folder and its contents, found in the Asset folder.
 
