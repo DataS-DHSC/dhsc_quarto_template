@@ -1,8 +1,17 @@
-# read.me for how to update the gov.uk HTML extension for DHSC formatting
-# if updating read.me, add where folders and files are specifically.
+# Instructions for all updates
+1. create a new GIT branch from the development branch to work in.
+
+2. Make changes to the relevant files within the `_extensions` folder.
+
+3. Update the relevant `_extension.yml` files for the extensions you have modified with a new version number, e.g. `version: 1.0.4` to `version: 1.0.5`. For more major updates, change the middle version number, e.g. `version: 1.0.4` to `version: 1.1.0`
+
+4. Update the top of the News.md file in the project top level folder with the new version name and 
+description of what has changed/added/removed.
+
+5. Commit and push to GIT. Inform lead if it is ready to be QAd and merged.
 
 
-0. Choose correct GIT branch and pull or create new branch from the development branch.
+# Updating govuk HTML extension
 
 1.  To find out which version of the GOV.UK frontend is currently being used, 
 open `_extensions/govuk/GDS.css` and search for `root{--govuk-frontend-version:` (should be near the 
@@ -15,7 +24,7 @@ release of [GOV.UK frontend](https://github.com/alphagov/govuk-frontend/releases
 3.  Delete the `_extensions/govuk/assets` folder from quarto template project and
 replace it with the `assets` folder of the GOV.UK frontend download.
 
-4.  Delete the \_extensions/govuk/GDS.css file.
+4.  Delete the /_extensions/govuk/GDS.css file.
 
 5.  Copy the css file from the GOV.UK frontend download (usually at the root of the folder, and 
 called something like `govuk-frontend-5.7.1.min.css`) and place 
@@ -36,18 +45,6 @@ the filepath to be identified correctly.
 
 10.  Open `_extensions/govuk/govuk.template.` Replace code between the two `header` tags with 
 the [latest HTML code for the header component](https://design-system.service.gov.uk/components/header/) from the 
-design system website. Do the same for the [footer](https://design-system.service.gov.uk/components/footer/).
+design system website. This can be tricky as we have modified the header to use the DHSC logo. Therefore you may need to make a number of edits to get the new header to use the DHSC logo and department name. Do the same for the [footer](https://design-system.service.gov.uk/components/footer/). No edits should be required for the footer.
 
-10.5  NB Some more specific editing or reorganizing may be needed - see https://design-system.service.gov.uk/components/footer/ for
-how the code may be best implemented. WARNING: HTML order does impact the output (e.g. header is placed inside
-the body) so it is recommended to have a spare copy of the govuk.template code readily available.
-
-11. If there have been changes to the styling of headings in the GDS CSS, these will 
-need to be updated in `_extensions/govuk/styles.scss`. This is because quarto doesn't produce text with
-the classes that the GDS css is expecting.
-
-12. Update News.md file in the project folder and _extension.yml file in the govuk folder with new version name and 
-description of what has changed/added/removed. If any changes from read.me, edit the read.me
-
-13. Commit, add comments, and push to GIT. Inform lead if it is ready to be merged.
-
+11. Check if there have been any changes to the styling of paragraphs, headings or links in the design system (see [styles tab page](https://design-system.service.gov.uk/styles/)). You may want to review the recent updates on the [design system homepage](https://design-system.service.gov.uk/) to see if any changes to typography are mentioned. If so, `_extensions/govuk/styles.scss` will need to be updated. The govUK design system styles text using classes (e.g. `govuk-heading-l`). We can't easily use these classes with quarto though. We therefore write our own CSS rules in `_extensions/govuk/styles.scss` to style the relevant text element (e.g. h1, h2, p) to match the corresponding design system class rules (e.g. `.govuk-heading-l`). You can find the styles applied to each class in `_extensions/govuk/GDS.css` (each one may appear multiple times e.g. for different screen sizes). Remember, we aren't using the GDS transport font, so text will not look identical.
