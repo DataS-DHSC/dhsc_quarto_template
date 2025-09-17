@@ -3,7 +3,7 @@
 
 2. Make changes to the relevant files within the `_extensions` folder.
 
-3. Update the relevant `_extension.yml` files for the extensions you have modified with a new version number, e.g. `version: 1.0.4` to `version: 1.0.5`. For more major updates, change the middle version number, e.g. `version: 1.0.4` to `version: 1.1.0`
+3. Update the relevant `_extension.yml` files for the extensions you have modified with a new version number, e.g. `version: 1.0.4` to `version: 1.0.5`. For more major updates, change the middle version number, e.g. `version: 1.0.4` to `version: 1.1.0`. For the most major updates change the first digit of the version number.
 
 4. Update the top of the News.md file in the project top level folder with the new version name and 
 description of what has changed/added/removed.
