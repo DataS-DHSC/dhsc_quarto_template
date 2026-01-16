@@ -96,12 +96,14 @@ a:active {
 a:hover {
   color: #003078;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 p a:active {
   color: black;
   background-color: #ffdd00;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 
@@ -116,6 +118,7 @@ h3 a:hover {
   color: #003078;
   text-decoration: underline;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 h3 a:active {
@@ -123,6 +126,7 @@ h3 a:active {
   text-decoration: underline;
   background-color: #ffdd00;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 
@@ -160,6 +164,7 @@ img:hover {
 .panel-tabset .nav-item a:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 .panel-tabset .nav-item a:active,
@@ -167,6 +172,7 @@ img:hover {
   font-weight:700;
   text-decoration: underline;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 

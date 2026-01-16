@@ -118,12 +118,14 @@ a:active {
 a:hover {
   color: #003078;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 p a:active {
   color: black;
   background-color: #ffdd00;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 /* section numbering */
@@ -141,6 +143,7 @@ p a:active {
 .panel-tabset .nav-item a:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 .panel-tabset .nav-item a:active,
@@ -148,6 +151,7 @@ p a:active {
   font-weight:700;
   text-decoration: underline;
   text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
 }
 
 

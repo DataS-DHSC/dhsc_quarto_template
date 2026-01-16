@@ -1,3 +1,7 @@
+# DHSC v(1.0.5), OHID (1.0.5), GOVUK (1.1.1) 
+* Fix the underline of links so it doesn't break for letters which go below the
+  line.
+
 # GOVUK (1.1.0)
 * Updated from GOV.UK Frontend v5.7.1 to v5.11.1. This includes a new style of header and footer.
 

@@ -1,6 +1,6 @@
 title: DHSC
 author: Olivia Box Power
-version: 1.0.4
+version: 1.0.5
 quarto-required: ">=1.2.0"
 contributes:
   formats:
